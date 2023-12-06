@@ -1,0 +1,42 @@
+body {
+    background-color:lightpink; /* İstenilen renk kodunu buraya ekleyin */
+    /* veya background-color: red; şeklinde direk renk adını kullanabilirsiniz */
+    margin: 0; /* Sayfa kenar boşluklarını sıfırlar */
+    padding: 0; /* Sayfa iç kenar boşluklarını sıfırlar */
+}
+article:last-child {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Resmi ortala */
+article:last-child img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* İlk UL listesini altına al */
+article:last-child ul:first-child {
+    margin-top: 20px; /* İstenirse boşluğu ayarlayabilirsiniz */
+}
+
+/* Sıralı ve sırasız listeleri ortala */
+article:last-child ul,
+article:last-child ol {
+    text-align: left;
+    padding-left: 0;
+    position: relative;
+    max-width: 400px; /* İstenirse maksimum genişliği sınırlayabilirsiniz */
+    margin: 0 auto; /* Ortalamak için */
+}
+
+/* Sırasız listelerdeki işaretleri stilendirme */
+article:last-child ul li {
+    list-style-type: disc;
+}
+
+/* Sıralı listelerdeki işaretleri stilendirme */
+article:last-child ol li {
+    list-style-type: decimal;
+}
